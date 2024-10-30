@@ -1,0 +1,12 @@
+.button {
+  padding: 17px 32px;
+  background-color: rgba(237, 76, 92, 1);
+  border: 1px solid rgba(237, 76, 92, 1);
+  border-radius: 6px;
+
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

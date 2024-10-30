@@ -1,0 +1,25 @@
+.contact-form__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: start;
+}
+
+.contact-form__first-last-name-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    @media only screen and (min-width: 475px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.6rem;
+    }
+}
+
+.contact-form__button-container {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}

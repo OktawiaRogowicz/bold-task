@@ -41,7 +41,15 @@
 //
 // export default NextImage;
 
-const Image = ({ src, srcSet, className, sizes, alt, width = "auto", height = "auto" }) => {
+const Image = ({
+  src,
+  srcSet,
+  className,
+  sizes,
+  alt,
+  width = "auto",
+  height = "auto",
+}) => {
   const handleImageError = (e) => {
     e.target.alt = "Image failed to load";
   };

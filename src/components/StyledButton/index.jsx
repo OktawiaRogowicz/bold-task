@@ -1,13 +1,10 @@
-import './index.css'
+import "./index.css";
 
 const StyledButton = ({ type, onClick, children }) => {
-
   return (
-    <button
-        className="button"
-        type={type}
-        onClick={onClick}
-    >{children}</button>
+    <button className="button" type={type} onClick={onClick}>
+      {children}
+    </button>
   );
 };
 

@@ -1,26 +1,45 @@
-import cx from 'classnames'
+import cx from "classnames";
 
-import './index.css'
+import "./index.css";
+import Text from "../text/index.jsx";
 
-
-const FormInput = ({ type, name, value, onChange, placeholder, required, disabled, style, fullWidth = false }) => {
-
+const FormInput = ({
+  type,
+  name,
+  value,
+  onChange,
+  placeholder,
+  required,
+  disabled,
+  style,
+  fullWidth = false,
+  error,
+}) => {
   const handleFormInputChange = (e) => {
-    onChange(e, name)
-  }
+    onChange(e, name);
+  };
 
   return (
-    <input
-      className={cx('form-input', {['form-input--full-width']: fullWidth})}
-      type={type}
-      id={name}
-      name={name}
-      value={value}
-      onChange={handleFormInputChange}
-      placeholder={placeholder}
-      required={required}
-      disabled={disabled}
-    />
+    <div
+      className={cx("form-input__container", {
+        ["form-input__container--full-width"]: fullWidth,
+      })}
+    >
+      <input
+        className={cx("form-input", {
+          ["form-input--error"]: !!error,
+        })}
+        type={type}
+        id={name}
+        name={name}
+        value={value}
+        onChange={handleFormInputChange}
+        placeholder={placeholder}
+        required={required}
+        disabled={disabled}
+      />
+      {error && <Text color="red">{error}</Text>}
+    </div>
   );
 };
 

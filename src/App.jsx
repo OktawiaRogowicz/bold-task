@@ -1,11 +1,13 @@
 import React from 'react'
-import './App.css'
+
 import TopBar from './components/topBar'
 import Intro from './sections/intro'
 import Features from './sections/features'
 import Technology from './sections/technology'
 import CTA from './sections/CTA'
 import Contact from './sections/contact'
+
+import './App.css'
 
 function App() {
 

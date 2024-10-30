@@ -1,3 +1,46 @@
 .contact {
-  height: 30rem;
+    padding: 120px 24px 80px 24px;
+    display: flex;
+
+    @media only screen and (min-width: 992px) {
+        padding: 120px 120px 80px 120px;
+    }
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+
+        @media only screen and (min-width: 992px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 120px;
+        }
+    }
+}
+
+.contact__description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact__form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+}
+
+.contact__form-first-last-name-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media only screen and (min-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
